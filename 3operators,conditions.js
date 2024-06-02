@@ -1,6 +1,6 @@
 let a =5;
 let b =10;
-
+console.log("Operators")
 // Arithmetic 
 console.log("Arithmetic")
 console.log(a+b);
@@ -29,7 +29,6 @@ console.log(d) // then print value
 console.log("Assignment")
 let e=10;
 let f=2;
-
 e += f;
 console.log(e);
 
@@ -47,3 +46,21 @@ const cond1 = a1!=a2;
 const cond2 = e<f;
 console.log(cond1 || cond2)
 console.log(!(a1==10))
+
+console.log("Conditional statements");
+console.log("IF & ElSE statement");
+
+let numb=2;
+if(numb%2==0){
+    console.log(numb,"Number is even");
+}
+else {
+    console.log(numb,"Number is odd")
+}
+// Ternary operators
+console.log("Ternary operators");
+// condition ?"true" or "false";
+
+let col="black";
+let theme = col=="black" ?"true":"false";
+console.log(theme);
