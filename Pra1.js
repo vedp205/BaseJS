@@ -6,6 +6,8 @@ if  (numb%5==0){
 else{
     console.log(numb,"is multiple not by 5");
 }*/
+
+/*
 console.log("Qs2. Write a code which can give grades to students according to their scores:")
 let len =prompt("Enter the number");
 
@@ -26,4 +28,4 @@ else if (len<=59 && len>=50){
 }   
 else if (len>=49 && len<=0){
     console.log("F")
-}
+}*/
