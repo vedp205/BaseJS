@@ -27,3 +27,4 @@ let forin_loop={
 for(let i3 in forin_loop) {
     console.log(`${i3} = ${forin_loop[i3]}`);
 }
+console.log("")

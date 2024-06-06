@@ -52,4 +52,36 @@ while(user_no!=game_no) {
 }
 console.log("right");
 */
+/*
+console.log("Qs5. For a given array with marks Of students [85, 97, 44, 37, 76, 60] Find the average marks of the entire class.");
 
+let marks=[85, 97, 44, 37, 76, 60,90];
+let sum = 0;
+for(let value of marks) {
+    sum+=value;
+}
+console.log(sum);
+let average_marks= sum / marks.length;
+console.log(`average ${average_marks}`);
+
+*/
+
+console.log("Qs6. For a given array with prices of 5 items -> [250, 645, 300, 900, 50]. All items have an offer of 10% OFF on them. Change the array to store final price after applying offer.")
+
+let ary=[250, 645, 300, 900, 50];
+/*
+let i=0;
+for(let value of ary){
+    let offer =value/10;
+    ary[i]=ary[i] - offer;
+    console.log(ary[i]);
+    i++;
+}
+*/
+let ary02=[250, 645, 300, 900, 50];
+for(let i=0;i<=ary02.length;i++){
+    let offer =ary02[i]/10;
+    console.log(`The price is ${offer}`);
+    ary02[i]-=offer;
+
+}
