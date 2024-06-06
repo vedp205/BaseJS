@@ -28,4 +28,28 @@ else if (len<=59 && len>=50){
 }   
 else if (len>=49 && len<=0){
     console.log("F")
-}*/
+}
+*/
+
+/*
+console.log("Qs3. Print all even numbers from 0 to 100.");
+
+for(let numb=0;numb<=100;numb+=2){
+    if (numb%2==0){
+    console.log(numb);
+    }
+}
+*/
+
+/*
+console.log("Qs4. Create a game where you start with any random game number. Ask the user to keep guessing the game number until the user enters correct value.");
+let game_no=20;
+let user_no=prompt("Enter your number = ")
+
+while(user_no!=game_no) {
+    console.log("Enter again");
+    user_no=prompt("Enter your number = ")
+}
+console.log("right");
+*/
+
