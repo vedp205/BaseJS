@@ -1,5 +1,5 @@
 console.log("Array");
-
+/*
 let array =[3,5,3,23,67,87,12,90,21,55];
 console.log(array);
 array[2]=33;
@@ -27,4 +27,41 @@ let forin_loop={
 for(let i3 in forin_loop) {
     console.log(`${i3} = ${forin_loop[i3]}`);
 }
-console.log("")
+*/
+
+
+// Array methods
+let no=[1,2,3,4,5];
+
+// push():
+no.push(0,54,32,98,12);
+console.log(no);
+
+// pop():
+no.pop();
+console.log(no);
+
+// tostring()
+console.log(no.toString());
+
+let no_0=[2,3,4,5,6,7,8]
+let no_1=[1,3,4,9,6,7,2]
+
+// concat()
+let ans = no_0.concat(no_1);
+ans.sort();
+console.log(ans);
+
+// shift
+no_1.unshift(2);
+ console.log(no_1);
+
+// slice
+let no_2=[0,1,2,3,4,5];
+console.log(no_2.slice(0,3));
+
+// Splice
+ 
+let no_4=[24, 32, 64, 97, 1, 3];
+no_4.splice(1, 3, 12, 45,43);
+console.log(no_4); 

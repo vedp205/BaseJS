@@ -67,21 +67,20 @@ console.log(`average ${average_marks}`);
 */
 
 console.log("Qs6. For a given array with prices of 5 items -> [250, 645, 300, 900, 50]. All items have an offer of 10% OFF on them. Change the array to store final price after applying offer.")
-
 let ary=[250, 645, 300, 900, 50];
 /*
+for(i=0;i<=ary.length;i++) {
+    let offer=ary[1]/10;
+    ary[1]-=offer;
+}
+console.log(ary);
+*/
+/*
 let i=0;
-for(let value of ary){
-    let offer =value/10;
-    ary[i]=ary[i] - offer;
-    console.log(ary[i]);
+for(let value of ary) {
+    let offer=value/10;
+    ary[i]=ary[i]-offer;
+    console.log(`This is after offer ${ary[i]}`);    
     i++;
 }
 */
-let ary02=[250, 645, 300, 900, 50];
-for(let i=0;i<=ary02.length;i++){
-    let offer =ary02[i]/10;
-    console.log(`The price is ${offer}`);
-    ary02[i]-=offer;
-
-}
