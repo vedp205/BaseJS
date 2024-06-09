@@ -25,3 +25,12 @@ const arrow=(a, b) =>{
     return a*b;
    }
 console.log(arrow(3,4));
+
+// Methods 
+// forEach loop in array
+console.log("ForEach loop in array");
+let ary=[1, 2, 3, 4, 5] 
+
+ary.forEach(function metho_val(value, idx) {
+    console.log(value, idx);
+});

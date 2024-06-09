@@ -65,16 +65,18 @@ let average_marks= sum / marks.length;
 console.log(`average ${average_marks}`);
 
 */
-
-console.log("Qs6. For a given array with prices of 5 items -> [250, 645, 300, 900, 50]. All items have an offer of 10% OFF on them. Change the array to store final price after applying offer.")
-let ary=[250, 645, 300, 900, 50];
 /*
+console.log("Qs6. For a given array with prices of 5 items -> [250, 645, 300, 900, 50]. All items have an offer of 10% OFF on them. Change the array to store final price after applying offer.")
+
+let ary=[250, 645, 300, 900, 50];
+
 for(i=0;i<=ary.length;i++) {
     let offer=ary[1]/10;
     ary[1]-=offer;
 }
 console.log(ary);
 */
+
 /*
 let i=0;
 for(let value of ary) {
@@ -84,3 +86,31 @@ for(let value of ary) {
     i++;
 }
 */
+/*
+console.log("Qs7. Create a function using the function keyword that takes a String as an argument & returns the number of vowels in the string.");
+
+const count_number = (str) =>{
+    let count = 0;
+    for (let i of str) {
+        if ([i] == "a" ||
+            [i] == "e" ||
+            [i] == "i" ||
+            [i] == "o" ||
+            [i] == "u")
+        count++;
+    }
+    return count;
+}
+let Qs7 = count_number("helloo");
+console.log(Qs7)
+*/
+/*
+console.log("Qs8. For a given array Of numbers. print the square of each value using the forEach loop.")
+let arry=[1, 2, 3, 4, 5];
+
+let calsum = (val) => {
+    console.log(val*val);
+};
+arry.forEach(calsum);
+*/
+
