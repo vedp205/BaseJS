@@ -86,9 +86,9 @@ for(let value of ary) {
     i++;
 }
 */
+
 /*
 console.log("Qs7. Create a function using the function keyword that takes a String as an argument & returns the number of vowels in the string.");
-
 const count_number = (str) =>{
     let count = 0;
     for (let i of str) {
@@ -101,8 +101,8 @@ const count_number = (str) =>{
     }
     return count;
 }
-let Qs7 = count_number("helloo");
-console.log(Qs7)
+let Qs7_op = count_number("helloo");
+console.log(Qs7_op);
 */
 /*
 console.log("Qs8. For a given array Of numbers. print the square of each value using the forEach loop.")
@@ -114,3 +114,35 @@ let calsum = (val) => {
 arry.forEach(calsum);
 */
 
+
+
+/*
+console.log("Qs8. We are given array of marks of students. Filter our of the marks of students that scored 90+.");
+
+let ary_90 = [24, 36, 42, 35, 88, 99, 66, 43, 90, 12, 22, 93, 65];
+
+let filter_ary90 = ary_90.filter((val, idx) => {
+        return val
+});
+console.log(filter_ary90); 
+*/
+
+
+console.log("Qs9. Take a number n as input from user. Create an array of numbers from 1 to n.\n Use the reduce method to calculate sum of all numbers in the array.\n Use the reduce method to calculate product of all numbers in the array.");
+
+let a = prompt("Enter a number");
+let ary = [];
+for (let i = 1; i <= a; i++){
+    ary[i - 1] = i;
+}
+console.log(ary);
+
+let sum = ary.reduce((res, cur) => {
+    return res + cur; 
+    });
+console.log(sum);
+
+let factorial = ary.reduce((res1, cal2) => {
+    return res1 * cal2;
+});
+console.log(factorial);
