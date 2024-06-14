@@ -127,7 +127,7 @@ let filter_ary90 = ary_90.filter((val, idx) => {
 console.log(filter_ary90); 
 */
 
-
+/*
 console.log("Qs9. Take a number n as input from user. Create an array of numbers from 1 to n.\n Use the reduce method to calculate sum of all numbers in the array.\n Use the reduce method to calculate product of all numbers in the array.");
 
 let a = prompt("Enter a number");
@@ -146,3 +146,4 @@ let factorial = ary.reduce((res1, cal2) => {
     return res1 * cal2;
 });
 console.log(factorial);
+*/
