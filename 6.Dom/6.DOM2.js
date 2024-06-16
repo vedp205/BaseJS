@@ -1,0 +1,1 @@
+let a =color_white.document
