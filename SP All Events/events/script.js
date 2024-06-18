@@ -1,25 +1,15 @@
-let allpara = document.querySelectorAll('p');
-function envet() {
-    alert("You clicked ");
-}
-for (let i = 0; i < allpara.length; i++) {
-    let para = allpara[i];
-    para.addEventListener('click', envet);
-}
-
 let buton = document.querySelector('blackcolor');
 
 function color() {
-    let bg1 = "black";
-    let bg2 = "white"
-    document.body.style.background = bg1;
-    if (document.body.style.background == bg1) {
-        document.body.style.background == "white";
+    
+    
+    if (document.body.style.background == "white") {
+        document.body.style.background = "black";
     }
         
 
-    else if(document.body.style.background == bg2) {
-            document.body.style.background == "black";
+    else {
+            document.body.style.background = "white";
     }
 }
-buton.addEventListener('click', color());
+// buton.addEventListener('click', 'color()');
