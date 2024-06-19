@@ -2,13 +2,13 @@ let a = document.querySelector("#white_button");
 
 function color_white() {
     // let BWcolors = ;
-    if (document.body.style == "white") {
-        document.body.style = "black";
-        a.textContent = "light";
+    if (document.body.style.backgroundColor == "white") {
+        document.body.style.backgroundColor = "black";
+        a.textContent="Light";
     }
     else {
-        document.body.style = "white";
-        a.textContent = "dark";
+        document.body.style.backgroundColor = "white";
+        a.textContent="Dark";
     }
 }
 a.addEventListener("click", "color_white()");
