@@ -1,15 +1,15 @@
-let buton = document.querySelector('blackcolor');
+// let buton = document.querySelector('blackcolor');
 
-function color() {
+// function color() {
     
     
-    if (document.body.style.background == "white") {
-        document.body.style.background = "black";
-    }
+//     if (document.body.style.background == "white") {
+//         document.body.style.background = "black";
+//     }
         
 
-    else {
-            document.body.style.background = "white";
-    }
-}
+//     else {
+//             document.body.style.background = "white";
+//     }
+// }
 // buton.addEventListener('click', 'color()');
