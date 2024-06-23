@@ -1,13 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     
-</body>
-<script src="script.js"></script>
+    <title>stone paper scissor</title>
+  </head>
+  <body>
+    <header id="heading">
+      <h2 class="heading_msg">Stone Paper Scissor</h2>
+    </header>
+
+    <main>
+      <div class="three_choices">
+        <div class="spschoices">
+          <figure class="stone_img">
+            <img src="icons/stone.png" class="imgs" id="stone" />
+            <button class="three_butn" id="stone_butn">Stone</button>
+          </figure>
+
+          <figure class="paper_img">
+            <img src="icons/paper.png" class="imgs" id="paper" />
+            <button class="three_butn" id="paper_butn">Paper</button>
+          </figure>
+
+          <figure class="scissor_img">
+            <img src="icons/scissors.png" class="imgs" id="scissor" />
+            <button class="three_butn" id="scissor_butn">Scissor</button>
+          </figure>
+        </div>
+      </div>
+
+      <div class="scorebord">
+        <div class="user_score">
+
+          <p id="score_of_user">0</p>
+          <p class="score" id="user">User</p>
+        </div>
+
+        <div class="comp_score">
+          
+          <p id="score_of_comp">0</p>
+          <p class="score" id="comp">Comp</p>
+        </div>
+      </div>
+    </main>
+    <div class="win_msgcontiner">
+      <button class="win_butn">Winner</button>
+    </div>
+  </body>
+  <script src="script.js"></script>
 </html>

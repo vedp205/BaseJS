@@ -1,0 +1,71 @@
+* {
+  font-family: "Playwrite NZ", cursive;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+body {
+  height: 95vh;
+  width: 97vw;
+}
+#heading {
+  background-color: rgba(66, 66, 255, 0.747);
+  display: flex;
+  justify-content: center;
+  color: rgb(255, 252, 252);
+  border-radius: 5px;
+  font: bolder;
+}
+.three_choices {
+  margin-top: 25px;
+  height: 50.8vh;
+  width: 97vw;
+}
+.spschoices {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px;
+}
+.imgs {
+  height: 40vh;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+.three_butn {
+  height: 6vh;
+  width: 7vw;
+  margin-top: 2vw;
+  margin-left: 10vw;
+  border: transparent;
+  border-radius: 5px;
+  background-color: rgba(66, 66, 255, 0.747);
+}
+
+.scorebord {
+  display: flex;
+  justify-content: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande";
+}
+#score_of_user,
+#score_of_comp {
+  margin-left: 10px;
+}
+#user {
+  margin-right: 30px;
+}
+.win_msgcontiner {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.win_butn {
+  width: 16vh;
+  height: 7vh;
+  border: transparent;
+  border-radius: 5px;
+  background-color: rgba(66, 66, 255, 0.747);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: large;
+}
