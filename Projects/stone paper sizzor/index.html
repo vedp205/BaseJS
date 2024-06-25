@@ -3,52 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    
-    <title>stone paper scissor</title>
   </head>
   <body>
-    <header id="heading">
-      <h2 class="heading_msg">Stone Paper Scissor</h2>
-    </header>
-
+    <header><h1 class="heading_sps">&nbsp;Stone Paper Scissor</h1></header>
     <main>
-      <div class="three_choices">
-        <div class="spschoices">
-          <figure class="stone_img">
-            <img src="icons/stone.png" class="imgs" id="stone" />
-            <button class="three_butn" id="stone_butn">Stone</button>
-          </figure>
-
-          <figure class="paper_img">
-            <img src="icons/paper.png" class="imgs" id="paper" />
-            <button class="three_butn" id="paper_butn">Paper</button>
-          </figure>
-
-          <figure class="scissor_img">
-            <img src="icons/scissors.png" class="imgs" id="scissor" />
-            <button class="three_butn" id="scissor_butn">Scissor</button>
-          </figure>
+      <div class="choices">
+        <div class="choice" id="rock">
+          <img src="icons/stone.png" class="imgs" />
+        </div>
+        <div class="choice" id="paper">
+          <img src="icons/copy.png" class="imgs" />
+        </div>
+        <div class="choice" id="scissor">
+          <img src="icons/scissors.png" class="imgs" />
         </div>
       </div>
-
-      <div class="scorebord">
-        <div class="user_score">
-
-          <p id="score_of_user">0</p>
-          <p class="score" id="user">User</p>
+      <div class="score_bord">
+        <div class="scores" id="user_score">
+          <p id="user_score_id">0</p>
+          <p>User</p>
         </div>
-
-        <div class="comp_score">
-          
-          <p id="score_of_comp">0</p>
-          <p class="score" id="comp">Comp</p>
+        <div class="scores" id="comp_score">
+          <p id="comp_score_id">0</p>
+          <p>Comp</p>
         </div>
       </div>
+      <h1 class="win_msger">Winner</h1>
     </main>
-    <div class="win_msgcontiner">
-      <button class="win_butn">Winner</button>
-    </div>
   </body>
   <script src="script.js"></script>
 </html>

@@ -1,16 +1,3 @@
-ston    =1
-paper   =2
-scissor =3
-
-_______________________________________
-Random alpabet 
-
-const randstr = (length) => {
-    const char = ("SPK");
-    for (let i = 0; i < length; i++){
-        const result = char.charAt(Math.random()*char.length);
-        return result;
-    }
-}
-console.log(randstr(1));
-_______________________________________
+rock  win paper
+paper win scissor
+scissor win rock

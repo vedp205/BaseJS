@@ -1,71 +1,52 @@
 * {
-  font-family: "Playwrite NZ", cursive;
+  font-family: "Roboto Slab", serif;
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
+  padding: 0%;
+  margin: 0%;
 }
 body {
-  height: 95vh;
-  width: 97vw;
+  width: 200vh;
+  height: 99vh;
 }
-#heading {
-  background-color: rgba(66, 66, 255, 0.747);
-  display: flex;
-  justify-content: center;
-  color: rgb(255, 252, 252);
-  border-radius: 5px;
-  font: bolder;
+header {
 }
-.three_choices {
-  margin-top: 25px;
-  height: 50.8vh;
-  width: 97vw;
+.heading_sps {
+  border: 2px solid black;
+  margin-top: 5vh;
+  margin-left: 35vw;
+  display: inline;
+  height: 10vh;
+  font-family: "Playwrite US Trad", cursive;
+  font-optical-sizing: auto;
+  font-size: 7vh;
+  background-color: rgba(95, 95, 243, 0.721);
 }
-.spschoices {
-  height: 50vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 2px;
-}
-.imgs {
-  height: 40vh;
-  margin-left: 35px;
-  margin-right: 35px;
-}
-.three_butn {
-  height: 6vh;
-  width: 7vw;
-  margin-top: 2vw;
-  margin-left: 10vw;
-  border: transparent;
-  border-radius: 5px;
-  background-color: rgba(66, 66, 255, 0.747);
-}
-
-.scorebord {
-  display: flex;
-  justify-content: center;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande";
-}
-#score_of_user,
-#score_of_comp {
-  margin-left: 10px;
-}
-#user {
-  margin-right: 30px;
-}
-.win_msgcontiner {
+.choices {
   display: flex;
   justify-content: center;
   align-content: center;
+  margin-top: 4vh;
 }
-.win_butn {
-  width: 16vh;
-  height: 7vh;
-  border: transparent;
-  border-radius: 5px;
-  background-color: rgba(66, 66, 255, 0.747);
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-size: large;
+
+.imgs {
+  width: 40vh;
+  margin-left: 12px;
+}
+.score_bord {
+  margin-top: 7vh;
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+}
+.scores {
+  font-size: 6vh;
+}
+.win_msger {
+  display: inline-block;
+  margin-left: 45vw;
+  margin-top: 10vh;
+  font-family: cursive;
+  font-size: 6vh;
 }

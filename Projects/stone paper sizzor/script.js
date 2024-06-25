@@ -1,19 +1,61 @@
-const stone_butn = document.getElementById("stone_butn");
-const paper_butn = document.getElementById("paper_butn");
-const scissor_butn = document.getElementById("scissor_butn");
-const score_of_user = document.getElementById("score_of_user");
-const score_of_comp = document.getElementById("score_of_comp");
+const choices = document.querySelectorAll(".choice");
+const win_msg = document.querySelector(".win_msger");
+const user_score = document.querySelector("#user_score_id");
+const comp_score = document.querySelector("#comp_score_id");
+//////////////////////////////////////////////////
+let usersc = 0;
+let compsc = 0;
 
-// let com_random = () => {
-//     return Math.floor(Math.random()*alphabet.length ) ;
-// }
+//////////////////////////////////////////////////
+// comp choice -It generate random number ;
+const generate_numbers = () => {
+  let three_choice = ["rock", "paper", "scissor"];
+  let randm = Math.floor(Math.random() * 3);
+  return three_choice[randm];
+};
+////////////////////////////////////////////////////
+// function that use in if-else condi
+const win = (user_win, user_choice, comp_choice) => {
+  if (user_win) {
+    usersc++;
+    user_score.innerText = usersc;
+    win_msg.innerText = `You win ${user_choice} beats ${comp_choice}`;
+  } else {
+    compsc++;
+    comp_score.innerText = compsc;
+    win_msg.innerText = `You loose ${comp_choice} beats ${user_choice}`;
+  }
+};
+const draw = () => {
+  console.log(`Game is draw`);
+  win_msg.innerText = "Game is draw";
+};
+//////////////////////////////////////////////////////////
+const user_choice = (choiceid) => {
+  console.log(`User select = ${choiceid}`);
+  const comp_choice = generate_numbers();
+  console.log(`Comp select = ${comp_choice}`);
+  //////////////////////////////////////////////////////////
+  // if with comp and user
+  if (choiceid == comp_choice) {
+    draw();
+  } else {
+    let user_win = true;
+    if (choiceid === "rock") {
+      user_win = comp_choice === "paper" ? false : true;
+    } else if (choiceid === "paper") {
+      user_win = comp_choice === "scissor" ? false : true;
+    } else {
+      user_win = comp_choice === "rock" ? false : true;
+    }
+    win(user_win, user_choice, comp_choice);
+  }
+  ////////////////////////////////////////////////////////////
+};
 
-// function createRandomString(length) {
-//     const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-//     let result = "";
-//     for (let i = 0; i < length; i++) {
-//         result += chars.charAt(Math.floor(Math.random() * chars.length));
-//     }
-//     return result;
-// }
-// console.log(createRandomString(1));
+choices.forEach((choice) => {
+  choice.addEventListener("click", () => {
+    const choiceid = choice.getAttribute("id");
+    user_choice(choiceid);
+  });
+});
