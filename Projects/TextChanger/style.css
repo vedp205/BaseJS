@@ -1,0 +1,45 @@
+body {
+  width: 98vw;
+  height: 97vh;
+}
+.butndiv {
+  display: flex;
+  justify-content: end;
+  margin: 7px;
+}
+#light_buton {
+  width: 5vw;
+  height: 4vh;
+}
+.div_class,
+.butons {
+  display: flex;
+  justify-content: center;
+}
+#id_tear {
+  width: 70vw;
+  height: 65vh;
+  border: 3px solid rgba(0, 0, 0, 0.918);
+  border-radius: 7px;
+  margin-top: 2vh;
+  font-size: larger;
+
+  font-family: "Playwrite MX", cursive;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+.butons {
+  gap: 5vw;
+  margin-top: 2vh;
+}
+#cap_buton,
+#sma_buton {
+  width: 8.7vw;
+  height: 5vh;
+  font-size: larger;
+  font-weight: 900;
+  font-family: unset;
+  color: rgba(0, 0, 0, 0.82);
+  border-radius: 12px;
+}

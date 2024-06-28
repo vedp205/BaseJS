@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save File Example</title>
+</head>
+<body>
+    <textarea id="textInput" placeholder="Enter some text here..."></textarea>
+    <button id="saveTextButton">Save Text File</button>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+document.getElementById('saveTextButton').addEventListener('click', function () {
+    const text = document.getElementById('textInput').value;
+    const blob = new Blob([text], { type: 'text/plain' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'myfile.txt';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+});
