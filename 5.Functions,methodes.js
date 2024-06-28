@@ -56,7 +56,7 @@ let new_Array22 = Array22.map((value) => {
 console.log(new_Array22);
 
 // Filter method
-console.log("fulter method");
+console.log("filter method");
 
 let Array23 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 let fil_array22 = Array23.filter((vlaue2) => {
