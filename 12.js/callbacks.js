@@ -1,28 +1,16 @@
-// TODO: Asynchronisation;
+// TODO: callback;
 
-/*
-console.log("1");
-setTimeout(() => {
-    console.log("hello world");
-}, 1000);
-console.log("2");
-*/
-
-// TODO: callback
-/*
 function hello() {
-    console.log("I say hello");
+  console.log("I say hello");
 }
 function leave(s) {
-    console.log("I say leave");
-    s();
+  console.log("I say leave");
+  s();
 }
 leave(hello);
-*/
-
 
 // TODO: Callback Hell
-/*
+
 function a(callback) {
   setTimeout(() => {
     console.log("This is A");
@@ -57,23 +45,22 @@ a(() => {
     });
   });
 });
-*/
-// FIXME: Another method of callback
-/*
+
+// FIXME: Another method of callback hell
+
 function add(a, b, callback) {
-    setTimeout(() => {
-      console.log(a + b);
-      callback();
-    }, 2000);
-  }
-  function min(a, b, callback) {
-    setTimeout(() => {
-      console.log(a - b);
-      callback();
-    }, 1200);
-  }
-  
-  add(2, 3, () => {
-    min(10, 4, () => {});
-  });
-*/  
+  setTimeout(() => {
+    console.log(a + b);
+    callback();
+  }, 2000);
+}
+function min(a, b, callback) {
+  setTimeout(() => {
+    console.log(a - b);
+    callback();
+  }, 1200);
+}
+
+add(2, 3, () => {
+  min(10, 4, () => {});
+});
