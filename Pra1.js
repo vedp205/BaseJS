@@ -114,15 +114,13 @@ let calsum = (val) => {
 arry.forEach(calsum);
 */
 
-
-
 /*
 console.log("Qs8. We are given array of marks of students. Filter our of the marks of students that scored 90+.");
 
-let ary_90 = [24, 36, 42, 35, 88, 99, 66, 43, 90, 12, 22, 93, 65];
+let ary_90 = [24, 36, 42, 35, 88, 99, 66, 43, 90, 12, 22, 93, 65,92];
 
 let filter_ary90 = ary_90.filter((val, idx) => {
-        return val
+    return val, idx;
 });
 console.log(filter_ary90); 
 */
@@ -147,3 +145,24 @@ let factorial = ary.reduce((res1, cal2) => {
 });
 console.log(factorial);
 */
+
+/*
+console.log(
+  "Q10.You are creating a website for your college. Create a class User with 2 properties, name & email. It also has a method called viewData( ) that allows user to view website data. "
+);
+
+let data = "data info";
+class user {
+  constructor(name, email) {
+    this.name = name;
+    this.email = email;
+  }
+  viewdata() {
+      console.log(`data = ${data}`);
+    }
+}
+
+let user_1 = new user("ved", "vedp@gmail.com");
+let user_2 = new user("kayaan", "gabo@gmail.com");
+*/
+

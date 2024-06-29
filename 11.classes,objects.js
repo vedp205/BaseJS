@@ -65,6 +65,7 @@ console.log(emp1);
 */
 
 // Inhertance
+/*
 class person {
   eat() {
     console.log("Person Eat");
@@ -74,20 +75,30 @@ class person {
   }
 }
 class emp extends person {
-  constructor(name, salary, field) {
-    super();
-    this.name = name;
-    this.salary = salary;
-    this.field = field;
-  }
-  showdetail() {
-    console.log(
-      `His name is ${this.name}. He is in ${this.field}. His salary is ${this.salary}`
-    );
+  engn() {
+    console.log("hello i am engineer");
   }
 }
-let emp1 = new emp("Rohan", 20240, "Devops");
-console.log(emp1.showdetail());
+
+let emp1 = new emp();
+console.log(emp1.engn());
 console.log(emp1.eat());
 console.log(emp1.sleep());
-// console.log(emp1.showdetail());
+*/
+//Super class
+class person {
+  constructor(name) {
+    this.name = name;
+  }
+}
+class emp extends person {
+  constructor(name, work) {
+    super(name);
+    this.work = work;
+  }
+  works() {
+    console.log(`${this.name} is a ${this.work}`);
+  }
+}
+let emp1 = new emp("ved", "backend");
+console.log(emp1.works());
