@@ -12,7 +12,7 @@ console.log(a**b);
 
 
 // Unary 
-console.log("unary")
+console.log(`unary `)
 // Post
 let c=5;
 c++; //It print the value 5 

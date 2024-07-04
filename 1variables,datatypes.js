@@ -1,4 +1,4 @@
-// Variables
+s// Variables
 fullname="Ved patel";
 console.log(fullname);
 price=90 ;
