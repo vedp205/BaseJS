@@ -5,3 +5,7 @@ const getfacts=async()=>{
     let promise =await fetch(url);
     console.log(promise);
 }
+const getfact1=async()=>{
+    let promise =await fetch(url);
+    console.log(promise);
+}
