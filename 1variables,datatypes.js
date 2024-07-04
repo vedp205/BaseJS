@@ -1,4 +1,4 @@
-s// Variables
+// Variables
 fullname="Ved patel";
 console.log(fullname);
 price=90 ;
@@ -11,7 +11,7 @@ y=undefined;
 console.log(y)
 
 isfollow=true;
-console.log(isfollow); 
+console.log(isfollow);
 
 let fname ="ved";
 let age =20;
