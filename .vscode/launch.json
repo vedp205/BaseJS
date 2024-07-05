@@ -1,11 +1,18 @@
 {
-    "configurations": [
+  "configurations": [
     {
-        "name": "Attach to Chrome",
-        "port": 9222,
-        "request": "attach",
-        "type": "chrome",
-        "webRoot": "${workspaceFolder}"
+      "type": "java",
+      "name": "Test",
+      "request": "launch",
+      "mainClass": "Test",
+      "projectName": "BaseJS_626e351e"
+    },
+    {
+      "name": "Attach to Chrome",
+      "port": 9222,
+      "request": "attach",
+      "type": "chrome",
+      "webRoot": "${workspaceFolder}"
     }
-    ]
+  ]
 }
