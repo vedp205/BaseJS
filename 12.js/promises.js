@@ -30,7 +30,7 @@ function getdata(dataid, getnextdata) {
   */
 
 // TODO: Promise.then and Promise.catch
-/*
+
 const getpromise = () => {
   return new Promise((resolve, reject) => {
     //   reject("The promise is reject");
@@ -45,7 +45,7 @@ promise.catch((err) => {
   console.log("The promise is reject ");
 });
 console.log(promise);
-*/
+
 /*
 function async1() {
   return new Promise((resolve, reject) => {
