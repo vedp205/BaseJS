@@ -1,4 +1,4 @@
-/*
+
 // TODO: Pomise
 //1
 let promise1 = new Promise((resolve, reject) => {
@@ -12,7 +12,7 @@ let promise2 = new Promise((resolve, reject) => {
     reject("A reject");
   });
   console.log(promise);
-*/
+
 
 /*
 // Use 

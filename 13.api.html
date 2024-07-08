@@ -6,10 +6,25 @@
     <title>Document</title>
   </head>
   <body>
-    <input type="text" placeholder="Pokémon name" id="Pokemonname" />
-    <button onclick="getalldata()" id="search_bton">Search</button>
-    <img src="" alt="Pokemon Sprite" id="PokemonSprite" style="display: none;" />
-    <p id="paradata" style="display: none;">Pokémon</p>
+    <div class="maincontaner">
+      <input type="text" placeholder="Pokemon" id="pokimonname" />
+      <button onclick="getapidata()" id="search_bton">search</button>
+      <img src="" style="display: none;"id="PokemonSprite">
+      <p id="parasid"></p>
+    </div>
     <script src="13.API.js"></script>
   </body>
 </html>
+<!-- const paratxt = document.getElementById("paradata");
+const search_bton = document.getElementById("search_bton");
+const getapidata = async () => {
+  const pokemon_name = document.getElementById("pokimonname").value;
+  const response = await fetch(
+    `https://pokeapi.co/api/v2/pokemon/${pokemon_name}`
+  );
+  if (!response.ok) {
+    throw new Error("Could not get data");
+  }
+  const data = await response.json();
+  console.log(data);
+};-->
