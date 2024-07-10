@@ -1,0 +1,53 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  height: 99vh;
+  width: 99.4vw;
+  border: 2px solid black;
+  background: rgb(255, 221, 46);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 221, 46, 1) 0%,
+    rgba(231, 225, 112, 1) 5%,
+    rgba(255, 162, 0, 1) 100%
+  );
+}
+.text_h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif,
+    serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+#main-container {
+}
+.flag_img_tag {
+  height: 23vh;
+}
+.input_number_tag {
+  width: 6vw;
+  height: 3.4vh;
+  border-radius: 6px;
+  margin-left: 1vw;
+}
+
+#select_id_1,
+#select_id_2 {
+  height: 4vh;
+  width: 5vw;
+  border: 20px;
+  border-radius: 8px;
+  margin: 20px;
+}
+#select_id_1:hover,
+#select_id_2:hover,
+#select_id_1:active,
+#select_id_2:active {
+  border: 2px transparent;
+}

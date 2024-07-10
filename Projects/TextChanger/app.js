@@ -6,7 +6,7 @@ const light_buton = document.querySelector(".light_buton");
       const maint = document.querySelector("main");
 
       //TODO: Functio 1 Complete light section
-
+      
       function ligbuton() {
         let bgcolor = Textform.style.backgroundColor;
         if (Textform.style.backgroundColor === "white") {

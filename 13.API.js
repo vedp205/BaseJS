@@ -19,7 +19,7 @@ const getapidata = async () => {
   
 };
 // //TODO: A request header and response header
-// /*
+// 
 // let URL = "https://cat-fact.herokuapp.com/facts";
 // const getweatherdata = () => {
 //   let weatherURL = fetch(URL, {
@@ -41,7 +41,7 @@ const getapidata = async () => {
 
 // };
 // console.log(getweatherdata());
-// */
+// */  
 
 // /*
 // // Post request
