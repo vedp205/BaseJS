@@ -1,37 +1,54 @@
+<!-- <img class="flag_img_tag" src="https://flagsapi.com/IN/flat/64.png" alt="" /> -->
+<!-- height: 20px; margin-bottom: 20px; -->
+<!-- style="width: 47px;"  -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency exchange</title>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
 </head>
+<h1 id="h1_heading_tag">Currency Exchange</h1>
 
 <body>
-    <h1 class="text_h1">Currency Exchange</h1>
-    <div id="main-container">
-        
-        <div class="first_container">
-            <img class="flag_img_tag" src="https://flagsapi.com/US/flat/64.png" alt="" />
+    <!-- !Main Container   -->
+    <div id="main_container">
+
+        <!-- ?Img Container   -->
+        <div class="img_conatainer">
+            <img class="flag_img_tag , img_icon_class" id="flag_id1" src="https://flagsapi.com/IN/shiny/64.png" alt="">
+            <img class="flag_img_tag , img_icon_class" id="flag_id2" src="https://flagsapi.com/US/shiny/64.png" alt="">
         </div>
-        <input type="number" class="input_number_tag">
-        <select name="from" id="select_id_1">
-            <option class="select_options" value="USD" selected>USD</option>
-            <option class="select_options" value="IND">IND</option>
-            <option class="select_options" value="EUR">EUR</option>
-            <option class="select_options" value="GER">GER</option>
-        </select>
-        <div id="_container">
-            <img class="flag_img_tag" src="https://flagsapi.com/IN/flat/64.png" alt="" />
+
+        <!-- ?input Container   -->
+        <div class="input_conatainer">
+            <input type="number" class="inputno_class" id="input_ID1">
+            <img id="arrow_img_icons" class="img_icon_class" src="arrows.png" alt="" style=" ">
+            <input type="number" class="inputno_class" id="input_ID2">
         </div>
-        <input type="number" class="input_number_tag">
-        <select name="from" id="select_id_2">
-            <option class="select_options" value="IND" selected>IND</option>
-            <option class="select_options" value="USD">USD</option>
-            <option class="select_options" value="EUR">EUR</option>
-            <option class="select_options" value="GER">GER</option>
-        </select>
+
+        <!-- ?select Container   -->
+        <div class="select_container">
+            <select name="from" id="Select_id1" class="Select_Class">
+                <option value="US">US</option>
+                <option value="IN" selected>IN</option>
+                <option value="AU">AU</option>
+                <option value="DE">DE</option>
+            </select>
+
+            <select name="to" id="Select_id2" class="Select_Class">
+                <option value="US">US</option>
+                <option value="IN" selected>IN</option>
+                <option value="AU">AU</option>
+                <option value="DE">DE</option>
+            </select>
+        </div>
+        <!-- ? Button -->
+        <div class="buton_container">
+            <button onclick="Enter_btn()" class="boton-elegante">Enter</button>
+        </div>
     </div>
 </body>
 
