@@ -1,6 +1,3 @@
-<!-- <img class="flag_img_tag" src="https://flagsapi.com/IN/flat/64.png" alt="" /> -->
-<!-- height: 20px; margin-bottom: 20px; -->
-<!-- style="width: 47px;"  -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,46 +7,33 @@
     <title>Currency exchange</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<h1 id="h1_heading_tag">Currency Exchange</h1>
 
 <body>
-    <!-- !Main Container   -->
+    <h1 id="h1_heading_tag">Currency Exchange</h1>
     <div id="main_container">
-
-        <!-- ?Img Container   -->
-        <div class="img_conatainer">
-            <img class="flag_img_tag , img_icon_class" id="flag_id1" src="https://flagsapi.com/IN/shiny/64.png" alt="">
-            <img class="flag_img_tag , img_icon_class" id="flag_id2" src="https://flagsapi.com/US/shiny/64.png" alt="">
+        <div class="Dropdown">
+            <h4>From</h4>
+            <div class="select_container">
+                <img class="flag_img_tag img_icon_class" id="flag_id1" src="https://flagsapi.com/IN/flat/64.png" alt="">
+                <select name="from" id=" Select_id1" class="Select"></select>
+                <h4>TO</h4>
+                <img class="flag_img_tag img_icon_class" id="flag_id2" src="https://flagsapi.com/US/flat/64.png" alt="">
+                <select name="to" id="Select_id2" class="Select"></select>
+            </div>
         </div>
-
-        <!-- ?input Container   -->
+        <p class="PARATAG"></p>
         <div class="input_conatainer">
-            <input type="number" class="inputno_class" id="input_ID1">
-            <img id="arrow_img_icons" class="img_icon_class" src="arrows.png" alt="" style=" ">
-            <input type="number" class="inputno_class" id="input_ID2">
+            <input type="number" placeholder="Type Number" style="font-size: 12px;" class="inputno_class"
+                id="input_ID1">
+            <img id="arrow_img_icons" class="img_arrow_class" src="arrows.png" alt="">
+            <h6 class="H6_Currency" id="H6_curr_id">1 INR = 80 USD</h6>
         </div>
-
-        <!-- ?select Container   -->
-        <div class="select_container">
-            <select name="from" id="Select_id1" class="Select_Class">
-                <option value="US">US</option>
-                <option value="IN" selected>IN</option>
-                <option value="AU">AU</option>
-                <option value="DE">DE</option>
-            </select>
-
-            <select name="to" id="Select_id2" class="Select_Class">
-                <option value="US">US</option>
-                <option value="IN" selected>IN</option>
-                <option value="AU">AU</option>
-                <option value="DE">DE</option>
-            </select>
-        </div>
-        <!-- ? Button -->
         <div class="buton_container">
-            <button onclick="Enter_btn()" class="boton-elegante">Enter</button>
+            <button onclick="Enter_btn()" class="boton-elegante">Get Exchange</button>
         </div>
     </div>
+    <script src="codes.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

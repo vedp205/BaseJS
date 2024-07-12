@@ -5,16 +5,16 @@
 body {
   width: 99.5vw;
   height: 89.7vh;
-  /* border: 5px solid rgb(239, 37, 37); */
   background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
 }
+
+/* ! All containers */
 .input_conatainer,
 .select_container,
 .img_conatainer,
 .buton_container {
   display: flex;
   justify-content: center;
-  /* align-content: center; */
 }
 #h1_heading_tag {
   margin-left: 42vw;
@@ -25,18 +25,22 @@ body {
   font-style: normal;
 }
 #main_container {
-  width: 80vw;
-  height: 85vh;
-  margin-left: 12vw;
+  width: 65vw;
+  height: 55vh;
+  margin-top: 2vw;
+  margin-left: 22vw;
   border-radius: 20px;
-  background: linear-gradient(90deg, #9de4f8 0%, #bcf9c2 100%);
+  background: linear-gradient(90deg, #cef9d2, #bae8f4);
+  align-content: center;
 }
+/* ? IMG */
 .flag_img_tag {
-  width: 15vw;
+  width: 10vw;
 }
 #flag_id1 {
-  margin-right: 10vw;
+  margin-right: 12vw;
 }
+/* ? Inpute*/
 .inputno_class {
   border: 2px solid transparent;
   width: 6vw;
@@ -44,9 +48,11 @@ body {
   padding-left: 0.8em;
   outline: none;
   overflow: hidden;
-  background-color: #f3f3f3;
-  border-radius: 10px;
+  background-color: #ffffff;
+  border-radius: 6px;
   transition: all 0.5s;
+  font-weight: 720;
+  font-family: 'Arial Narrow Bold', sans-serif  ;
 }
 .inputno_class:hover,
 .inputno_class:focus {
@@ -55,36 +61,48 @@ body {
   background-color: white;
 }
 #arrow_img_icons {
-  height: 18px;
-  width: 22px;
-  margin-top: 3px;
-  margin-left: 8vw;
-  margin-right: 8vw;
+  height: 15px;
+  width: 20px;
+  margin-top: 5px;
+}
+#input_ID1 {
+  position: relative;
+  margin-right: 10vw;
+  left:  2.9vw;
+}
+#H6_curr_id {
+  margin-left: 7vw;
 }
 .inputno_class::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
-.Select_Class {
-  width: 3.5vw;
+.H6_Currency {
+  /* margin-top: 2px; */
+  font-size: large;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+/* ? Select */
+.Select {
+  width: 8vw;
   height: 4vh;
-  margin: 4vh;
-  border: 1.9999999999999999999999px solid rgba(0, 0, 0, 0.863);
-  border-radius: 6px;
+  margin-bottom: 5vh;
+  border: 0px solid rgb(255, 255, 255);
+  border-radius: 7px;
 }
 #Select_id1 {
-  margin-right: 20vw;
+  margin-right: 16vw;
 }
+
 .boton-elegante {
-  height:  6vh;
-  width: 7vw;
+  margin-top: 35px;
+  padding: 2px 4px 2px 4px;
   border: 2px solid #2c2c2c;
   background-color: #1a1a1a;
   color: #ffffff;
   font-size: 1.2rem;
   cursor: pointer;
-  border-radius: 30px;
+  border-radius: 7px;
   transition: all 0.4s ease;
   outline: none;
   position: relative;
