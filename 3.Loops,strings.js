@@ -60,30 +60,28 @@ for(let key in stud){
 
 // ?STRINGS
 // ?template string
-console.log("Strings")
-let stu ={Name   : "Rahul", 
-         roll_no :  60  ,
-        };
+console.log("Strings");
+let stu = { Name: "Rahul", roll_no: 60 };
 console.log(`The name is ${stu.Name} and his number is ${stu.roll_no}`);
 
 // ? String methods
 
 // ? for Uppercase
-let str_method1="this is uppercase method in string.";
-let str_uppercase=str_method1.toUpperCase();
-console.log(str_uppercase)
+let str_method1 = "this is uppercase method in string.";
+let str_uppercase = str_method1.toUpperCase();
+console.log(str_uppercase);
 // ? O/P THIS IS UPPERCASE METHOD IN STRING.
 
 // ? for lowercase
-let str_method2="THIS IS LOWERCASE METHOD IN STRING.";
-let str_lowercase=str_method2.toLowerCase();
+let str_method2 = "THIS IS LOWERCASE METHOD IN STRING.";
+let str_lowercase = str_method2.toLowerCase();
 console.log(str_lowercase);
 // ? O/P this is lower method in string.
 
 // ? Trim
-let str_method3="           This is trim method";
-let str_trim=str_method3.trim();
-console.log(str_trim)
+let str_method3 = "           This is trim method";
+let str_trim = str_method3.trim();
+console.log(str_trim);
 
 // ? slice
-let str_method4="This is is a slice method";
+let str_method4 = "This is is a slice method";

@@ -18,6 +18,4 @@ for (let Select of Dropdown) {
     updateFlag(evt.target);
   });
 }
-const updateFlag = (element) => {
-  
-};
+const updateFlag = (element) => {};
